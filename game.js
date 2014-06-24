@@ -1,5 +1,5 @@
 game.things = (function(){
-  var items = {
+  var items = { 
     bat: {
       name: 'bat',
       effects: {
