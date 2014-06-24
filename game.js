@@ -1,20 +1,20 @@
 game.things = (function(){
-  var items = {
+  var items = { 
     bat: {
       name: 'bat',
       effects: {
-        'player_inventory': { message: "<p>You picked up the bat!</p>",
+        'player_inventory': { message: "<p>Steve Jobs is safely strapped in, but he might be badly burnt after the ride, looking somewhat like a stick..</p>",
                             object: "addItem",
                             subject: "deleteItem"
         },
-        'dino': { message: "<p>You hit the dino with the bat.</p><p>Now he's angry.</p>",
+        'dino': { message: "<p>You gave Steve Wozniak a friend!.</p><p>Now he's angry.</p>",
                   subject: 'deleteItem',
                   object: 'deleteItem',
                   callback: function(){game.screen.callDino()}
 
         },
         'empty': {
-              message: "<p>You set the bat down over there.</p>",
+              message: "<p>You left Steve Jobs.</p>",
               object: "addItem",
               subject: "deleteItem"
         }
@@ -23,7 +23,7 @@ game.things = (function(){
     dino: {
       name: 'dino',
       effects: {
-        'player_inventory': { message: "<p>You can't move the dino...</p>" } 
+        'player_inventory': { message: "<p>You can't move Woz...</p>" } 
       }
     }
   };
